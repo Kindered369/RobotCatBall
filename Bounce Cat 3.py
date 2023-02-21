@@ -4,15 +4,15 @@ wn = turtle.Screen()
 wn.title("Cat Ball Clicker by CoolCompany")
 wn.bgcolor("white")
 
-wn.register_shape("greenfloor.gif")
+wn.register_shape("./assests/img/greenfloor.gif")
 greenfloor = turtle.Turtle()
-greenfloor.shape("greenfloor.gif")
+greenfloor.shape("./assests/img/greenfloor.gif")
 greenfloor.speed(0)
 
-wn.register_shape("catball-000.gif")
+wn.register_shape("./assests/img/catball-000.gif")
 
 catball = turtle.Turtle()
-catball.shape("catball-000.gif")
+catball.shape("./assests/img/catball-000.gif")
 catball.speed(0)
 
 clicks = 0
@@ -36,3 +36,5 @@ catball.onclick(clicked)
     
 
 wn.mainloop()
+
+#waz gud
