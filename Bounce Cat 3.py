@@ -1,7 +1,7 @@
 import turtle
 
 wn = turtle.Screen()
-wn.title("Cat Ball Clicker by CoolCompany")
+wn.title("Cat Ball Clicker by Cool Company")
 wn.bgcolor("white")
 
 wn.register_shape("./assests/img/greenfloor.gif")
@@ -13,7 +13,8 @@ wn.register_shape("./assests/img/catball-000.gif")
 
 catball = turtle.Turtle()
 catball.shape("./assests/img/catball-000.gif")
-catball.speed(0)
+catball.speed(5)
+
 
 clicks = 0
 
@@ -21,7 +22,7 @@ pen = turtle.Turtle()
 pen.hideturtle()
 pen.color("black")
 pen.penup()
-pen.goto(0, 200)
+pen.goto(0, 300)
 pen.write(f"Clicks: {clicks}", align="center", font=("Courier New", 32, "normal"))
 
 def clicked(x, y):
@@ -30,11 +31,12 @@ def clicked(x, y):
     pen.clear()
     pen.write(f"Clicks: {clicks}", align="center", font=("Courier New", 32, "normal"))
     catball.penup()
-    catball.goto(0,20)
+    catball.goto(0,200)
     catball.goto(0,0)
+    
+
 catball.onclick(clicked)
     
 
 wn.mainloop()
 
-#waz gud
